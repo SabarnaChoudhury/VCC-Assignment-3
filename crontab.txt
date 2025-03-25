@@ -1,0 +1,2 @@
+# Run auto_scale.sh every 5 minutes
+*/5 * * * * /home/sabarna/auto_scale.sh
