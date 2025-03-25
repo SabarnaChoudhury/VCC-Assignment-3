@@ -1,0 +1,22 @@
+# Node Exporter Installation Instructions
+
+1. Download the Node Exporter binary (v1.8.0) from Prometheus GitHub:
+
+https://github.com/prometheus/node_exporter/releases/download/v1.8.0/node_exporter-1.8.0.linux-amd64.tar.gz
+
+2. Extract it:
+
+tar -xvzf node_exporter-1.8.0.linux-amd64.tar.gz
+
+3. Move it to /opt and rename:
+
+sudo mv node_exporter-1.8.0.linux-amd64 /opt/node_exporter
+
+4. Run Node Exporter:
+
+cd /opt/node_exporter
+./node_exporter &
+
+5. Verify it is running at:
+
+http://localhost:9100/metrics
